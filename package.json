@@ -41,7 +41,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourname/vite-workers-plugin"
+        "url": "https://github.com/coolRoger/workers-plugin"
     },
     "author": "Liao Kun Yong",
     "license": "MIT",
