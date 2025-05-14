@@ -1,0 +1,56 @@
+{
+    "name": "@coolroger/workers-plugin",
+    "version": "0.0.1",
+    "description": "A Vite/Webpack plugin to build workers and worklets into public directory with orphan checks, supporting both JavaScript and TypeScript files",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./webpack": {
+            "import": "./dist/webpack/index.js",
+            "require": "./dist/webpack/index.js",
+            "types": "./dist/webpack/index.d.ts"
+        },
+        "./vite": {
+            "import": "./dist/vite/index.js",
+            "require": "./dist/vite/index.js",
+            "types": "./dist/vite/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "vite": "^4.0.0 || ^5.0.0",
+        "webpack": "^5.0.0"
+    },
+    "dependencies": {
+        "@rollup/pluginutils": "^5.0.0",
+        "@types/node": "^22.15.17",
+        "minimatch": "10.0.1",
+        "@types/minimatch": "5.1.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourname/vite-workers-plugin"
+    },
+    "author": "Liao Kun Yong",
+    "license": "MIT",
+    "keywords": [
+        "vite",
+        "webpack",
+        "plugin",
+        "workers",
+        "worklets",
+        "public"
+    ]
+}
