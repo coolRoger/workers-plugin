@@ -1,6 +1,6 @@
 {
     "name": "workers-bundler-plugin",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A Vite/Webpack plugin to build workers and worklets into public directory with orphan checks, supporting both JavaScript and TypeScript files",
     "main": "dist/index.js",
     "module": "dist/index.js",
