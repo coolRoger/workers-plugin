@@ -4,7 +4,7 @@ import { Compiler, NormalModule, WebpackPluginInstance } from "webpack";
 import { minimatch } from "minimatch";
 import { PluginOptions } from "../types";
 
-class WebpackWorkersPlugin implements WebpackPluginInstance {
+class WebpackWorkersBundlerPlugin implements WebpackPluginInstance {
     private options: Required<PluginOptions>;
 
     constructor(options: PluginOptions = {}) {
@@ -22,4 +22,4 @@ class WebpackWorkersPlugin implements WebpackPluginInstance {
     }
 }
 
-export default WebpackWorkersPlugin;
+export default WebpackWorkersBundlerPlugin;

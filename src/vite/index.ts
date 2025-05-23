@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import { createFilter } from "@rollup/pluginutils";
 import { PluginOptions } from "../types";
 
-export default function viteWorkers(options: PluginOptions = {}) {
+export default function ViteWorkersBundlerPlugin(options: PluginOptions = {}) {
     const {
         srcDir = "src",
         publicDir = "public",
@@ -139,7 +139,7 @@ export default function viteWorkers(options: PluginOptions = {}) {
     }
 
     return {
-        name: "vite-workers-plugin",
+        name: "vite-workers-bundler-plugin",
 
         async buildStart() {
             for (const dir of destDirs) {

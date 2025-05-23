@@ -1,4 +1,4 @@
-import WebpackWorkersPlugin from "./webpack";
-import ViteWorkersPlugin from "./vite";
+import WebpackWorkersBundlerPlugin from "./webpack";
+import ViteWorkersBundlerPlugin from "./vite";
 
-export { WebpackWorkersPlugin, ViteWorkersPlugin };
+export { WebpackWorkersBundlerPlugin, ViteWorkersBundlerPlugin };
